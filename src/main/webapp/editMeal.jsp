@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Edit Meal</h2>
-    <form action="updateMeal" method="post">
+    <form action="meals" method="post">
         <table>
             <tr>
                 <td></td>

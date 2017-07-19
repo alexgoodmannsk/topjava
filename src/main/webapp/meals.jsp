@@ -57,12 +57,12 @@
                 <td>${meal.dateTime.toLocalDate()} ${meal.dateTime.toLocalTime()}</td>
                 <td>${meal.description}</td>
                 <td>${meal.calories}</td>
-                <td><a href="<c:url value='/updateMeal?id=${meal.id}'/>">Edit</a></td>
-                <td><a href="<c:url value='/deleteMeal?id=${meal.id}'/>">Delete</a></td>
+                <td><a href="<c:url value='/meals?action=edit&id=${meal.id}'/>">Edit</a></td>
+                <td><a href="<c:url value='/meals?action=delete&id=${meal.id}'/>">Delete</a></td>
             </tr>
         </c:forEach>
     </c:if>
 </table>
-<h3><a href="<c:url value='/addMeal'/>">Добавить новый прием пищи</a></h3>
+<h3><a href="<c:url value='/meals?action=add'/>">Добавить новый прием пищи</a></h3>
 </body>
 </html>
